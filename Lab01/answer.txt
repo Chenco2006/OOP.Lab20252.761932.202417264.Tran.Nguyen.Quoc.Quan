@@ -1,0 +1,6 @@
+1.Trong phương thức JOptionPane.showConfirmDialog, kết quả trả về là một số nguyên (int) đại diện cho lựa chọn của người dùng.
+-Nếu người dùng nhấn nút Cancel, phương thức sẽ trả về giá trị hằng số JOptionPane.CANCEL_OPTION (2).
+-Trong đoạn mã, dòng lệnh kiểm tra là option == JOptionPane.YES_OPTION. Vì CANCEL_OPTION không bằng YES_OPTION, biểu thức điều kiện sẽ sai và chương trình sẽ hiển thị thông báo: "You've chosen: No".
+-Nếu người dùng đóng cửa sổ, giá trị trả về sẽ là JOptionPane.CLOSED_OPTION (-1), và kết quả hiển thị vẫn sẽ là "No" theo logic hiện tại của mã nguồn.
+
+2.int option = JOptionPane.showConfirmDialog(null, "Do you want to change to the first class ticket?", "Select an Option", JOptionPane.YES_NO_OPTION);
